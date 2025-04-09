@@ -1,11 +1,7 @@
-
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-gray-900 text-white">
+  return <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -13,17 +9,7 @@ const Footer = () => {
             <p className="text-gray-400 mb-6">
               Compromisso com nossos clientes. Estabelecemos com nossos clientes um relacionamento de parceria e cumplicidade, onde o cliente sabe que pode contar conosco.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors" aria-label="Redes sociais da ContabiLima">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors" aria-label="Redes sociais da ContabiLima">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors" aria-label="Redes sociais da ContabiLima">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
+            
           </div>
           
           <div>
@@ -88,8 +74,6 @@ const Footer = () => {
           <p className="mt-2">O contador com quem você pode contar.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
