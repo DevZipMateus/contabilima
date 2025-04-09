@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
+    --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -16,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary color (60%) */
-    --primary: 215 60% 45%;
+    /* Primary color - Azul da Contabilima */
+    --primary: 222 71% 33%;
     --primary-foreground: 210 40% 98%;
 
-    /* Secondary color (30%) */
-    --secondary: 200 30% 80%;
+    /* Secondary color - Verde folha */
+    --secondary: 142 75% 56%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    /* Accent color (10%) */
-    --accent: 25 100% 55%;
+    /* Accent color - Dourado da Contabilima */
+    --accent: 38 92% 50%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -82,7 +82,7 @@
 
   .section-title::after {
     content: "";
-    @apply absolute w-20 h-1 bg-primary left-1/2 -translate-x-1/2 bottom-0 mt-4;
+    @apply absolute w-20 h-1 bg-contabilima-blue left-1/2 -translate-x-1/2 bottom-0 mt-4;
     bottom: -0.75rem;
   }
 
@@ -91,15 +91,15 @@
   }
 
   .btn-primary {
-    @apply px-6 py-3 bg-primary text-white rounded-md font-medium transition-all duration-200 hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+    @apply px-6 py-3 bg-contabilima-blue text-white rounded-md font-medium transition-all duration-200 hover:bg-blue-800 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 bg-white text-primary rounded-md font-medium transition-all duration-200 hover:bg-gray-50 border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
+    @apply px-6 py-3 bg-white text-contabilima-blue rounded-md font-medium transition-all duration-200 hover:bg-gray-50 border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2;
   }
 
   .btn-accent {
-    @apply px-6 py-3 bg-accent text-white rounded-md font-medium transition-all duration-200 hover:bg-accent/90 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2;
+    @apply px-6 py-3 bg-contabilima-gold text-white rounded-md font-medium transition-all duration-200 hover:bg-amber-500 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2;
   }
 
   .animate-when-visible {

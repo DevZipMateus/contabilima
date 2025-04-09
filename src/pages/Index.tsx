@@ -4,10 +4,9 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
-import PlansSection from '@/components/PlansSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   useEffect(() => {
@@ -29,6 +28,9 @@ const Index = () => {
       });
     });
 
+    // Set page title for SEO
+    document.title = "Contabilima Serviços Contábeis | O contador com quem você pode contar";
+
     // Clean up event listeners
     return () => {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -40,17 +42,16 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       <Header />
       <main className="flex-grow">
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <PlansSection />
-        <TestimonialsSection />
         <ContactSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

@@ -1,39 +1,54 @@
 
-import { Calculator, BarChart3, FileText, Users, PieChart, Building } from 'lucide-react';
+import { Calculator, FileText, PieChart, Users, BarChart3, Building, Award, Zap, FileCheck } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import AnimatedSection from './AnimatedSection';
 
 const ServicesSection = () => {
   const services = [
     {
+      icon: Building,
+      title: 'Abertura de Empresa',
+      description: 'Abertura, alteração ou encerramento de empresas com agilidade e segurança jurídica.'
+    },
+    {
       icon: Calculator,
-      title: 'Contabilidade',
-      description: 'Serviços completos de contabilidade para empresas de todos os portes, com demonstrativos claros e precisos.'
+      title: 'Imposto de Renda',
+      description: 'Declaração de imposto de renda para pessoas físicas e jurídicas, otimizando resultados.'
     },
     {
       icon: BarChart3,
-      title: 'Fiscal',
-      description: 'Gerenciamento de obrigações fiscais, apuração de impostos e planejamento tributário para otimizar a carga fiscal.'
-    },
-    {
-      icon: FileText,
-      title: 'Departamento Pessoal',
-      description: 'Gestão completa da folha de pagamento, admissões, demissões e todas as rotinas trabalhistas.'
-    },
-    {
-      icon: Building,
-      title: 'Abertura de Empresa',
-      description: 'Auxílio completo na abertura, alteração ou encerramento de empresas, com agilidade e segurança.'
-    },
-    {
-      icon: PieChart,
-      title: 'Consultoria Empresarial',
-      description: 'Análise financeira, planejamento estratégico e apoio na tomada de decisões para o crescimento do seu negócio.'
+      title: 'BPO Financeiro',
+      description: 'Gestão financeira completa para sua empresa com relatórios precisos e análises detalhadas.'
     },
     {
       icon: Users,
-      title: 'Societário',
-      description: 'Elaboração e alteração de contratos sociais, atas e documentos societários conforme a legislação vigente.'
+      title: 'Folha de Pagamento',
+      description: 'Gestão completa da folha de pagamento, admissões, demissões e rotinas trabalhistas.'
+    },
+    {
+      icon: PieChart,
+      title: 'Consultoria Contábil',
+      description: 'Análise financeira, planejamento estratégico e apoio na tomada de decisões para o crescimento.'
+    },
+    {
+      icon: FileCheck,
+      title: 'Declaração de ITR',
+      description: 'Declaração do Imposto Territorial Rural com segurança e dentro dos prazos legais.'
+    },
+    {
+      icon: Award,
+      title: 'Sistema de Gestão',
+      description: 'Implementação de sistemas de gestão empresarial para otimizar processos e resultados.'
+    },
+    {
+      icon: Zap,
+      title: 'Economia de Energia',
+      description: 'Soluções para redução de custos com energia e otimização do consumo.'
+    },
+    {
+      icon: FileText,
+      title: 'Certificado Digital',
+      description: 'Emissão e renovação de certificados digitais para pessoas físicas e jurídicas.'
     }
   ];
 
@@ -43,7 +58,7 @@ const ServicesSection = () => {
         <AnimatedSection>
           <h2 className="section-title">Nossos Serviços</h2>
           <p className="section-subtitle">
-            Oferecemos soluções completas para atender todas as necessidades da sua empresa
+            Oferecemos soluções completas para atender todas as necessidades contábeis da sua empresa
           </p>
         </AnimatedSection>
 
@@ -64,7 +79,7 @@ const ServicesSection = () => {
         </div>
 
         <AnimatedSection className="text-center mt-16">
-          <a href="#contato" className="btn-primary inline-block">
+          <a href="https://wa.me/5562991548978" className="btn-primary inline-block">
             Solicite um orçamento
           </a>
         </AnimatedSection>
