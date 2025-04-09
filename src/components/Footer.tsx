@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Linkedin, Twitter, Calendar, FileText, Calculator, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,16 +11,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">ContabiLima</h3>
             <p className="text-gray-400 mb-6">
-              Soluções contábeis completas para empresas de todos os portes, com foco em qualidade e resultados.
+              Compromisso com nossos clientes. Estabelecemos com nossos clientes um relacionamento de parceria e cumplicidade, onde o cliente sabe que pode contar conosco.
             </p>
             <div className="flex space-x-4">
-              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors">
+              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors" aria-label="Redes sociais da ContabiLima">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors">
+              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors" aria-label="Redes sociais da ContabiLima">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors">
+              <a href="https://taggo.one/contabilima" className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors" aria-label="Redes sociais da ContabiLima">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -34,34 +34,20 @@ const Footer = () => {
               <li><a href="#serviços" className="hover:text-white transition-colors">BPO Financeiro</a></li>
               <li><a href="#serviços" className="hover:text-white transition-colors">Folha de Pagamento</a></li>
               <li><a href="#serviços" className="hover:text-white transition-colors">Consultoria Contábil</a></li>
+              <li><a href="#serviços" className="hover:text-white transition-colors">Declaração de ITR</a></li>
+              <li><a href="#serviços" className="hover:text-white transition-colors">Sistema de Gestão Empresarial</a></li>
+              <li><a href="#serviços" className="hover:text-white transition-colors">Economia de Energia</a></li>
               <li><a href="#serviços" className="hover:text-white transition-colors">Certificado Digital</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Links Úteis</h3>
+            <h3 className="text-xl font-bold mb-4">Navegação</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors flex items-center">
-                  <Calendar className="h-4 w-4 mr-2" />
-                  Agenda Tributária
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors flex items-center">
-                  <FileText className="h-4 w-4 mr-2" />
-                  Tabelas Práticas
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors flex items-center">
-                  <Calculator className="h-4 w-4 mr-2" />
-                  Calculadoras
-                </a>
-              </li>
-              <li><a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Receita Federal</a></li>
-              <li><a href="https://www.gov.br/inss/pt-br" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Previdência Social</a></li>
-              <li><a href="https://www.fgts.gov.br/Pages/default.aspx" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">FGTS</a></li>
+              <li><a href="#início" className="hover:text-white transition-colors">Início</a></li>
+              <li><a href="#sobre" className="hover:text-white transition-colors">Sobre Nós</a></li>
+              <li><a href="#serviços" className="hover:text-white transition-colors">Serviços</a></li>
+              <li><a href="#contato" className="hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>
           
