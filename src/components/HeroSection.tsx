@@ -1,3 +1,4 @@
+
 import { ChevronRight } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 const HeroSection = () => {
@@ -30,6 +31,20 @@ const HeroSection = () => {
               </a>
               <a href="#serviços" className="btn-secondary">
                 Conheça Nossos Serviços
+              </a>
+            </div>
+
+            <div className="pt-4 flex items-center justify-start">
+              <a 
+                href="https://taggo.one/contabilima" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center gap-2 px-4 py-2 bg-contabilima-blue text-white rounded-md hover:bg-blue-800 transition-colors text-sm"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm.53 12.97c-.23.09-.49.14-.76.14-.37 0-.72-.09-1.03-.25a2.99 2.99 0 0 1-.94-.67 3.188 3.188 0 0 1-.63-2.55c.1-1.07.53-1.85 1.3-2.35.77-.5 1.44-.61 2.02-.36.58.24.99.72 1.24 1.43.13.39.18.78.14 1.18-.03.4-.14.78-.32 1.15-.18.37-.44.64-.78.83z" />
+                </svg>
+                Acessar cartão de visita
               </a>
             </div>
 
