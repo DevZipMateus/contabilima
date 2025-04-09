@@ -1,5 +1,5 @@
 
-import { X } from "lucide-react";
+import { X, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { MenuItem } from "./types";
 
