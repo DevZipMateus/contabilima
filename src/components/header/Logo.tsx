@@ -21,7 +21,10 @@ const Logo = ({ scrolled }: LogoProps) => {
           scrolled ? "text-contabilima-blue" : "text-contabilima-blue",
         )}
       >
-        <div className="text-xl md:text-2xl">Contabilima</div>
+        <div className="text-xl md:text-2xl">
+          <span className="text-contabilima-blue">Contabi</span>
+          <span className="text-contabilima-leaf">Lima</span>
+        </div>
         <div className="text-xs md:text-sm text-gray-600">SERVIÇOS CONTÁBEIS</div>
       </div>
     </a>
