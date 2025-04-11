@@ -21,13 +21,18 @@ const EgestorERP = () => {
             </p>
           </AnimatedSection>
           
-          {/* Right column - Image or Video Container */}
-          <AnimatedSection animation="fade-in-right" className="md:w-1/2 rounded-xl overflow-hidden shadow-xl">
-            <img 
-              src="/lovable-uploads/55dfa7ae-c98f-4fcc-9953-352cd665ed20.png"
-              alt="eGestor - Sistema de gestão empresarial"
-              className="w-full h-auto object-cover rounded-xl"
-            />
+          {/* Right column - Video Container */}
+          <AnimatedSection animation="slide-in-right" className="md:w-1/2 rounded-xl overflow-hidden shadow-xl">
+            <video 
+              className="w-full aspect-video object-cover" 
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+            >
+              <source src="https://egestor.com.br/assets/img/egestor-gestao-simples-para-crescer.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos.
+            </video>
           </AnimatedSection>
         </div>
         
