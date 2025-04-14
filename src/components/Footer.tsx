@@ -1,7 +1,5 @@
-
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import Logo from './header/Logo';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-gray-900 text-white">
@@ -17,17 +15,7 @@ const Footer = () => {
             </p>
             
             {/* Social Media Icons */}
-            <div className="flex space-x-4 mt-6">
-              <a href="#" className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors">
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors">
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-contabilima-blue transition-colors">
-                <Linkedin className="h-4 w-4" />
-              </a>
-            </div>
+            
           </div>
           
           {/* Services Column */}
@@ -101,5 +89,4 @@ const Footer = () => {
       </div>
     </footer>;
 };
-
 export default Footer;
