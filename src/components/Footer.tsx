@@ -1,7 +1,5 @@
-
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import Logo from './header/Logo';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-gray-900 text-white">
@@ -17,17 +15,7 @@ const Footer = () => {
             </p>
             
             {/* Social Media Icons */}
-            <div className="flex space-x-4">
-              <a href="https://www.facebook.com/contabilima" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="https://www.instagram.com/contabilima" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a href="https://www.linkedin.com/company/contabilima" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="h-6 w-6" />
-              </a>
-            </div>
+            
           </div>
           
           {/* Services Column */}
@@ -83,12 +71,7 @@ const Footer = () => {
                   <MapPin className="h-4 w-4" />
                 </div>
                 <div>
-                  <a 
-                    href="https://www.google.com/maps/place/Contabilima+Servi%C3%A7os+Cont%C3%A1beis/@-16.3199515,-48.9362992,17z/data=!3m1!4b1!4m6!3m5!1s0x935ea5398dff6d6f:0xe2b2792017d076b1!8m2!3d-16.3199515!4d-48.9362992!16s%2Fg%2F11x1fq1sj1!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-contabilima-leaf transition-colors"
-                  >
+                  <a href="https://www.google.com/maps/place/Contabilima+Servi%C3%A7os+Cont%C3%A1beis/@-16.3199515,-48.9362992,17z/data=!3m1!4b1!4m6!3m5!1s0x935ea5398dff6d6f:0xe2b2792017d076b1!8m2!3d-16.3199515!4d-48.9362992!16s%2Fg%2F11x1fq1sj1!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:text-contabilima-leaf transition-colors">
                     <p>Rua dos expedicionários Qd03E1 Lt22</p>
                     <p>Bairro Santa Maria de Nazaré</p>
                   </a>
