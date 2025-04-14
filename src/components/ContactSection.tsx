@@ -1,7 +1,9 @@
 
 import { Mail, Phone, MapPin } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+import GoogleMap from './GoogleMap';
 import { cn } from '@/lib/utils';
+
 const ContactSection = () => {
   return <section id="contato" className="py-16 bg-gradient-to-b from-contabilima-blue/5 to-white">
       <div className="section-container">
@@ -12,8 +14,8 @@ const ContactSection = () => {
           </p>
         </AnimatedSection>
 
-        <div className="mt-8">
-          <AnimatedSection animation="slide-in-left">
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-5 gap-6">
+          <AnimatedSection animation="slide-in-left" className="lg:col-span-3">
             <div className="glass-card rounded-xl p-6 sm:p-8 border-contabilima-blue/20">
               <h3 className="text-xl sm:text-2xl font-bold mb-6 text-contabilima-blue">Informações de Contato</h3>
               
@@ -79,8 +81,34 @@ const ContactSection = () => {
               </div>
             </div>
           </AnimatedSection>
+          
+          {/* Google Map */}
+          <AnimatedSection animation="slide-in-right" className="lg:col-span-2">
+            <div className="glass-card rounded-xl p-4 sm:p-6 border-contabilima-blue/20 h-full flex flex-col">
+              <h3 className="text-xl font-bold mb-4 text-contabilima-blue">Nossa Localização</h3>
+              <div className="flex-grow">
+                <GoogleMap />
+              </div>
+              <div className="mt-4 text-center">
+                <a 
+                  href="https://www.google.com/maps/place/Contabilima+Servi%C3%A7os+Cont%C3%A1beis/@-16.3199515,-48.9362992,17z/data=!3m1!4b1!4m6!3m5!1s0x935ea5398dff6d6f:0xe2b2792017d076b1!8m2!3d-16.3199515!4d-48.9362992!16s%2Fg%2F11x1fq1sj1!5m1!1e1?entry=ttu" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-contabilima-blue hover:text-blue-800 transition-colors text-sm inline-flex items-center gap-1"
+                >
+                  <span>Ver no Google Maps</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>;
 };
+
 export default ContactSection;
